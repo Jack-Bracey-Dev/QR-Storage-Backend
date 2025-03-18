@@ -1,6 +1,6 @@
 package com.jbt.qrstorage.security.controller;
 
-import com.jbt.qrstorage.entity.AuthUser;
+import com.jbt.qrstorage.common.entity.AuthUser;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate;

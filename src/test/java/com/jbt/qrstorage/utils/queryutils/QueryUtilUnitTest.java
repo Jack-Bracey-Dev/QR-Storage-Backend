@@ -1,5 +1,6 @@
 package com.jbt.qrstorage.utils.queryutils;
 
+import com.jbt.qrstorage.common.queryutils.QueryUtil;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

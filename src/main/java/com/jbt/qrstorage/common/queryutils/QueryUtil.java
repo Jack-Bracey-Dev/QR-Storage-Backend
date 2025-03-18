@@ -1,4 +1,4 @@
-package com.jbt.qrstorage.utils.queryutils;
+package com.jbt.qrstorage.common.queryutils;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

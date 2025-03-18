@@ -1,8 +1,8 @@
 package com.jbt.qrstorage.security.controller;
 
-import com.jbt.qrstorage.dto.AuthUserDto;
-import com.jbt.qrstorage.entity.AuthUser;
-import com.jbt.qrstorage.mappers.UserMapper;
+import com.jbt.qrstorage.common.dto.AuthUserDto;
+import com.jbt.qrstorage.common.entity.AuthUser;
+import com.jbt.qrstorage.common.mappers.UserMapper;
 import com.jbt.qrstorage.security.dto.RegistrationBodyDto;
 import com.jbt.qrstorage.security.dto.UserLoginBodyDto;
 import lombok.RequiredArgsConstructor;

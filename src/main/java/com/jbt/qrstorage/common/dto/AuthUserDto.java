@@ -1,4 +1,4 @@
-package com.jbt.qrstorage.dto;
+package com.jbt.qrstorage.common.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

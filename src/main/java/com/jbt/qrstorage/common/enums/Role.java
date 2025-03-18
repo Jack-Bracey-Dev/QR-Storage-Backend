@@ -1,4 +1,4 @@
-package com.jbt.qrstorage.enums;
+package com.jbt.qrstorage.common.enums;
 
 public enum Role {
 

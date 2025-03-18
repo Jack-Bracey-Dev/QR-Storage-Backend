@@ -1,6 +1,6 @@
 package com.jbt.qrstorage.security.controller;
 
-import com.jbt.qrstorage.dto.AuthUserDto;
+import com.jbt.qrstorage.common.dto.AuthUserDto;
 import com.jbt.qrstorage.security.dto.RegistrationBodyDto;
 import com.jbt.qrstorage.security.dto.UserLoginBodyDto;
 import jakarta.annotation.security.PermitAll;

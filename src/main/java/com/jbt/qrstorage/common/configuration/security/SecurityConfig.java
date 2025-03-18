@@ -1,4 +1,4 @@
-package com.jbt.qrstorage.configuration.security;
+package com.jbt.qrstorage.common.configuration.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

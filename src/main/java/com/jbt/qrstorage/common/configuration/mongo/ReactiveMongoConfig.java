@@ -1,4 +1,4 @@
-package com.jbt.qrstorage.configuration.mongo;
+package com.jbt.qrstorage.common.configuration.mongo;
 
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;

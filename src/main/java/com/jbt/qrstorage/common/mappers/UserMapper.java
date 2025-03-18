@@ -1,8 +1,8 @@
-package com.jbt.qrstorage.mappers;
+package com.jbt.qrstorage.common.mappers;
 
-import com.jbt.qrstorage.dto.AuthUserDto;
-import com.jbt.qrstorage.entity.AuthUser;
-import com.jbt.qrstorage.enums.Role;
+import com.jbt.qrstorage.common.dto.AuthUserDto;
+import com.jbt.qrstorage.common.entity.AuthUser;
+import com.jbt.qrstorage.common.enums.Role;
 import com.jbt.qrstorage.security.dto.RegistrationBodyDto;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

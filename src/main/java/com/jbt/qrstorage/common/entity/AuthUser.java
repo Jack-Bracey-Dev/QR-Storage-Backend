@@ -1,6 +1,6 @@
-package com.jbt.qrstorage.entity;
+package com.jbt.qrstorage.common.entity;
 
-import com.jbt.qrstorage.enums.Role;
+import com.jbt.qrstorage.common.enums.Role;
 import lombok.Builder;
 import lombok.Data;
 import lombok.experimental.FieldNameConstants;
