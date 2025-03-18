@@ -1,5 +1,6 @@
 package com.jbt.qrstorage.security.controller;
 
+import com.jbt.qrstorage.common.configuration.security.data.ISecurityConfigService;
 import com.jbt.qrstorage.common.dto.AuthUserDto;
 import com.jbt.qrstorage.common.entity.AuthUser;
 import com.jbt.qrstorage.common.mappers.UserMapper;
@@ -17,6 +18,8 @@ import reactor.core.publisher.Mono;
 public class AuthenticationService implements IAuthenticationService {
 
     private final IAuthenticationRepository authenticationRepository;
+
+    private final ISecurityConfigService securityConfigService;
 
     private final PasswordEncoder passwordEncoder;
 
