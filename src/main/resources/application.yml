@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: QR Storage
+  data:
+    mongodb:
+      uri: ""
+      database: ""
+      username: ""
+      password: ""
+debug: false
