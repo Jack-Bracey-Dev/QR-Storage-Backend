@@ -19,7 +19,7 @@ import reactor.core.publisher.Mono;
 @RestController
 public class AuthenticationController {
 
-    private final AuthenticationService authenticationService;
+    private final IAuthenticationService authenticationService;
 
     @PermitAll
     @PostMapping("login")

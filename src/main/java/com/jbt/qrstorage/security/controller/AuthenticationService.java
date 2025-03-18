@@ -16,7 +16,7 @@ import reactor.core.publisher.Mono;
 @Service
 public class AuthenticationService implements IAuthenticationService {
 
-    private final AuthenticationRepository authenticationRepository;
+    private final IAuthenticationRepository authenticationRepository;
 
     private final PasswordEncoder passwordEncoder;
 
