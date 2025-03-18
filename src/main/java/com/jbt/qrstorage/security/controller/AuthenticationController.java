@@ -1,6 +1,8 @@
 package com.jbt.qrstorage.security.controller;
 
+import com.jbt.qrstorage.dto.AuthUserDto;
 import com.jbt.qrstorage.security.dto.RegistrationBodyDto;
+import com.jbt.qrstorage.security.dto.UserLoginBodyDto;
 import jakarta.annotation.security.PermitAll;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -21,8 +23,8 @@ public class AuthenticationController {
 
     @PermitAll
     @PostMapping("login")
-    public Mono<String> login() {
-        return Mono.just("Logged in");
+    public Mono<String> login(@Valid @RequestBody UserLoginBodyDto body) {
+        return authenticationService.loginUser(body);
     }
 
     @PermitAll
@@ -33,8 +35,8 @@ public class AuthenticationController {
 
     @PermitAll
     @PostMapping("register")
-    public Mono<String> register(@Valid @RequestBody RegistrationBodyDto body) {
-        return Mono.just("Welcome " + body.getEmail());
+    public Mono<AuthUserDto> register(@Valid @RequestBody RegistrationBodyDto body) {
+        return authenticationService.registerNewUser(body);
     }
 
     @PermitAll
