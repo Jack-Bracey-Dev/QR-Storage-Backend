@@ -9,6 +9,6 @@ spring:
       password: ""
   security:
     token:
-      long-term-expiry-period: P10D
-      short-term-expiry-seconds: 600
+      jwt-expiration-seconds: 60000
+      jwt-secret: 18289470367876376813706236566407
 debug: false

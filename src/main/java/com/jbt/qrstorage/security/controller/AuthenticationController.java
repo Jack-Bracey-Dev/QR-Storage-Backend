@@ -1,6 +1,7 @@
 package com.jbt.qrstorage.security.controller;
 
 import com.jbt.qrstorage.common.dto.AuthUserDto;
+import com.jbt.qrstorage.security.dto.NewRefreshTokenBodyDto;
 import com.jbt.qrstorage.security.dto.RegistrationBodyDto;
 import com.jbt.qrstorage.security.dto.UserLoginBodyDto;
 import jakarta.annotation.security.PermitAll;
@@ -41,8 +42,8 @@ public class AuthenticationController {
 
     @PermitAll
     @PostMapping("refreshToken")
-    public Mono<String> refreshToken() {
-        return Mono.just("Refreshed token");
+    public Mono<String> refreshToken(@Valid @RequestBody NewRefreshTokenBodyDto body) {
+        return authenticationService.generateNewRefreshToken(body);
     }
 
 }

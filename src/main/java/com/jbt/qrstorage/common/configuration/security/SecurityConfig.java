@@ -25,8 +25,9 @@ public class SecurityConfig {
         http.authenticationManager(authenticationManager);
         http.securityContextRepository(securityContextRepository);
         http.authorizeExchange(req -> {
-            req.pathMatchers("/auth/login").permitAll();
-            req.pathMatchers("/auth/register").permitAll();
+//            req.pathMatchers("/auth/login").permitAll();
+//            req.pathMatchers("/auth/register").permitAll();
+            req.pathMatchers("/auth/**").permitAll();
             req.anyExchange().authenticated();
         });
         return http.build();
